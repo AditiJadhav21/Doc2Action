@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DocAction AI</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <nav><a class="brand" href="#">DocAction <i>AI</i></a><span>Document intelligence for the next step</span></nav>
+    <section id="intro" class="hero">
+      <p class="eyebrow">AWS-powered document assistant</p>
+      <h1>Turn a notice into <em>clear action.</em></h1>
+      <p class="lead">Upload a scholarship notice, circular, form, or official PDF. We extract its deadlines, eligibility, documents, and next steps.</p>
+      <label id="dropzone" class="dropzone" for="fileInput">
+        <input id="fileInput" type="file" accept="application/pdf,.pdf" hidden>
+        <span class="file-icon">↥</span><strong>Choose a PDF</strong><small>or drag and drop it here · PDF only</small>
+      </label>
+      <div id="selected" class="selected" hidden><span id="fileName"></span><button id="clearFile" type="button">Remove</button></div>
+      <button id="analyse" class="primary" disabled>Analyze document <span>→</span></button>
+      <p id="message" class="message" aria-live="polite"></p>
+    </section>
+    <section class="steps"><div><b>01</b> Secure upload</div><div><b>02</b> Read with Textract</div><div><b>03</b> Understand with AI</div></section>
+    <section id="results" hidden></section>
+  </main>
+  <template id="listTemplate"><article><h2></h2><ul></ul></article></template>
+  <script src="script.js"></script>
+</body>
+</html>
