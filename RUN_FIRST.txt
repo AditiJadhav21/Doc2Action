@@ -1,0 +1,9 @@
+1. Open a terminal inside this folder.
+2. Configure AWS CLI credentials: aws configure
+3. Ask AWS to enable access to a Bedrock chat model in your chosen region.
+4. Run: sam build
+5. Run: sam deploy --guided
+6. Copy the ApiUrl output into frontend/script.js (API_URL).
+7. Open frontend/index.html in a browser, or host frontend/ on S3/CloudFront.
+
+Detailed steps: docs/AWS_SETUP.md
