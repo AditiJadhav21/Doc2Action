@@ -1,17 +1,76 @@
 # AWS setup
 
-1. Install the [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) and [AWS SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html), then run `aws configure` with an IAM user or role allowed to create the resources in `template.yaml`.
-2. In Amazon Bedrock, request access to a Converse-compatible model in your selected Region. The template defaults to `amazon.nova-lite-v1:0`; change `BedrockModelId` during guided deployment if needed.
-3. In a terminal at the project root run `sam build`, followed by `sam deploy --guided`. Choose a unique stack name and keep all services in one Region (for example `ap-south-1`).
-4. When deployment completes, copy the `ApiUrl` output to the `API_URL` constant in `frontend/script.js`.
-5. Open `frontend/index.html` locally for testing, or host the three frontend files using S3 + CloudFront.
+## Prerequisites
 
-## Required account considerations
+Install:
 
-Textract and Bedrock incur usage charges. Set an AWS Budget before testing. Do not make the generated S3 bucket public. The app creates private, five-minute upload URLs instead.
+- AWS CLI
+- AWS SAM CLI
+- Python 3.13
+
+Configure AWS credentials:
+
+```bash
+aws configure
+```
+
+Verify:
+
+```bash
+aws sts get-caller-identity
+```
+
+## Bedrock
+
+Enable access to a Converse-compatible model in the selected AWS Region.
+
+The current template defaults to:
+
+```text
+amazon.nova-lite-v1:0
+```
+
+You can change `BedrockModelId` during guided deployment if required.
+
+## Deploy
+
+From the project root:
+
+```bash
+sam build
+sam deploy --guided
+```
+
+Keep the resources in one AWS Region.
+
+## Frontend configuration
+
+After deployment, copy the `ApiUrl` CloudFormation output into the
+frontend API configuration used by the application.
+
+## Security and cost
+
+- Keep the S3 bucket private.
+- Do not commit AWS credentials.
+- Upload URLs are intended to be short-lived.
+- Textract and Bedrock can incur usage charges.
+- Set an AWS Budget before testing.
 
 ## Troubleshooting
 
-- **403 from Bedrock:** model access is missing, the region is wrong, or `BedrockModelId` is unavailable there.
-- **CORS error:** confirm that `API_URL` exactly matches the CloudFormation output; redeploy after changing the template.
-- **Textract FAILED:** use a readable PDF. Password-protected or corrupt files are not supported.
+### Bedrock 403
+
+Check:
+
+- Model access
+- AWS Region
+- `BedrockModelId`
+
+### CORS error
+
+Confirm that the frontend API URL exactly matches the deployed API URL.
+
+### Textract failure
+
+Use a readable PDF. Password-protected or corrupt files are not supported
+by the current documented flow.
