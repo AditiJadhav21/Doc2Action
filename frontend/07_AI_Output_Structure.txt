@@ -1,0 +1,30 @@
+DOC2ACTION AI OUTPUT STRUCTURE
+
+The AI should convert every uploaded document into these six sections:
+
+1. Executive Summary
+   - Short overall summary
+
+2. Deadlines & Key Dates
+   - Important dates and what each date is for
+
+3. Eligibility Criteria
+   - Requirements for eligibility
+
+4. Required Documents
+   - Documents/certificates/proofs needed
+
+5. Recommended Next Steps
+   - Practical actions the user should take, in order
+
+6. Important Warnings & Rules
+   - Rules, restrictions, warnings, and mandatory instructions
+
+GENERAL RULES
+
+- Extract information only from the uploaded document.
+- Do not invent missing information.
+- Keep the output concise and easy to understand.
+- Preserve important dates, numbers, names, and requirements accurately.
+- If a section has no relevant information, return:
+  "No specific information found in the document."

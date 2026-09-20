@@ -1,0 +1,19 @@
+RECOMMENDED NEXT STEPS
+
+Purpose:
+Convert the document's instructions into practical actions the user should take.
+
+What it should contain:
+- Step 1: What to do first
+- Step 2: What to prepare
+- Step 3: What to submit/register
+- Step 4: What to verify
+- Step 5: Final submission or follow-up
+- Any action that has a deadline
+- Steps should be based only on information found in the document
+
+Important:
+Do not invent actions that are not supported by the document.
+
+If information is not available:
+No specific information found in the document.

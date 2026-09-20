@@ -1,0 +1,20 @@
+DEADLINES & KEY DATES
+
+Purpose:
+Extract every important date or time-related deadline from the document.
+
+What it should contain:
+- Application deadline
+- Submission deadline
+- Registration date
+- Exam/test date
+- Event date
+- Interview date
+- Verification date
+- Renewal date
+- Any other important date
+- Date + what the date is for
+- Time, if mentioned
+
+If information is not available:
+No specific information found in the document.

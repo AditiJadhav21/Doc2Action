@@ -1,0 +1,17 @@
+REQUIRED DOCUMENTS
+
+Purpose:
+List every document, certificate, proof, or attachment required by the document.
+
+What it should contain:
+- Document name
+- Certificate/proof required
+- Photo/signature requirements
+- Identity proof
+- Academic documents
+- Income/category/residence certificates
+- Bank/payment details, if required
+- File format, size, or upload requirements, if mentioned
+
+If information is not available:
+No specific information found in the document.

@@ -1,0 +1,19 @@
+IMPORTANT WARNINGS & RULES
+
+Purpose:
+Highlight instructions that the user must not miss.
+
+What it should contain:
+- Important rules
+- Restrictions
+- Mandatory conditions
+- Penalties
+- Rejection conditions
+- Incorrect-information warnings
+- Submission restrictions
+- Document-format restrictions
+- Important terms and conditions
+- Any instruction marked as important, mandatory, prohibited, or required
+
+If information is not available:
+No specific information found in the document.

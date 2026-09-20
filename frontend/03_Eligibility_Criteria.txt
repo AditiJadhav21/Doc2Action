@@ -1,0 +1,19 @@
+ELIGIBILITY CRITERIA
+
+Purpose:
+Identify who is eligible or not eligible according to the document.
+
+What it should contain:
+- Age requirement
+- Education/qualification
+- Minimum marks/percentage
+- Year/semester requirement
+- Category requirement
+- Income requirement
+- Location/residency requirement
+- Work/experience requirement
+- Gender or other stated criteria
+- Any additional eligibility conditions
+
+If information is not available:
+No specific information found in the document.
